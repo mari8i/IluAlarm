@@ -1,0 +1,69 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeviceFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.larswerkman.holocolorpicker.ColorPicker
+            android:layout_centerHorizontal="true"
+            android:id="@+id/color_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"/>
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_below="@+id/color_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/save_btn"
+            android:lines="1"/>
+
+        <Button
+            android:layout_below="@+id/color_picker"
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Save"/>
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:id="@+id/volume_txt"
+            android:layout_below="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volume:"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/volume_zero"
+            android:layout_below="@id/volume_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:id="@+id/volume_max"
+            android:layout_below="@id/volume_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"/>
+
+        <SeekBar
+            android:layout_toRightOf="@+id/volume_zero"
+            android:layout_toLeftOf="@+id/volume_max"
+            android:layout_below="@+id/volume_txt"
+            android:id="@+id/seek_volume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+    </RelativeLayout>
+</ScrollView>

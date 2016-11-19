@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.AlarmsFragment"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/snooze_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Snooze"
+        android:textSize="36sp"/>
+
+    <Button
+        android:id="@+id/stop_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:textSize="36sp"
+        android:layout_below="@id/snooze_btn"/>
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/alarm_list"
+        android:name="ilualarm.customvibes.net.ilualarm.fragments.AlarmItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:listitem="@layout/alarm_item"
+        android:layout_below="@id/stop_btn"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_input_add" />
+
+
+
+</RelativeLayout>

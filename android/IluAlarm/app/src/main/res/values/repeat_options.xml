@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="repeat_options">
+        <item>10 minutes</item>
+        <item>Hour</item>
+        <item>12 hours</item>
+        <item>Day</item>
+    </string-array>
+</resources>
