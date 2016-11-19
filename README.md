@@ -8,6 +8,8 @@ christmas present for her.
 
 Here is a picture of the only working "IluAlarm" (so far)
 
+![A bad picture of the finished IluAlarm](ilualarm.jpeg?raw=true "IluAlarm")
+
 
 The idea was to have a programmable alarm clock, and a music player,
 and something to download stuff from the internet without keeping her
@@ -58,7 +60,7 @@ Everything has been written in Python, however some external software has been u
   some built-in things for that, but they didn't work ootb and I had
   VERY little time for completing everying)
 
-The main contribution to the world of this project is the ST7565
+I think that the main contribution to the world of this project is the ST7565
 python interface (See raspberry/st7565.py or raspberry/display.py).
 It can also render custom fonts (See the raspberry/fonts/ directory)
 
